@@ -8,18 +8,25 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to our Landon Hotel Application</h1>
-    </header>
-    
-    <main>
-        <p>Explore our hotel rooms:</p>
-        <!-- Button to navigate to the rooms page -->
-        <a th:href="@{/rooms}" class="button">View Rooms</a>
-    </main>
-    
-    <footer>
-        <p>&copy; 2024 Hotel Room Application</p>
-    </footer>
+    <div class="container">
+        <div class="content-box">
+            <header>
+                <h1>Welcome to our Landon Hotel Application</h1>
+            </header>
+            
+            <main>
+                <p>Explore our hotel rooms:</p>
+                <!-- Buttons to navigate to the rooms page and room occupancy -->
+                <div class="button-container">
+                    <a th:href="@{/rooms}" class="button">View Rooms</a>
+                    <a th:href="@{/occupancy}" class="button">Room Occupancy</a>
+                </div>
+            </main>
+        </div>
+        
+        <footer>
+            <p>&copy; 2024 Hotel Room Application</p>
+        </footer>
+    </div>
 </body>
 </html>

@@ -8,22 +8,25 @@
 </head>
 <body>
   <header>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark" aria-label="Header">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Landon Hotel</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#site-nav" aria-controls="site-nav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="site-nav">
-          <ul class="navbar-nav me-auto mb-2 mb-md-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#" th:href="@{/rooms}">Rooms</a>
-            </li>
-          </ul>
-        </div>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark" aria-label="Header">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#" th:href="@{/}">Landon Hotel</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#site-nav" aria-controls="site-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="site-nav">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#" th:href="@{/rooms}">Rooms</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" aria-current="page" href="#" th:href="@{/occupancy}">Occupancy</a>
+          </li>
+        </ul>
       </div>
-    </nav>
-  </header>
+    </div>
+  </nav>
+</header>
   <main class="container">
     <h1>Rooms</h1>
     <table class="table">
