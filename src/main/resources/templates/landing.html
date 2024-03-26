@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Room Application</title>
+    <!-- Add your CSS stylesheets here -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to our Landon Hotel Application</h1>
+    </header>
+    
+    <main>
+        <p>Explore our hotel rooms:</p>
+        <!-- Button to navigate to the rooms page -->
+        <a th:href="@{/rooms}" class="button">View Rooms</a>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Hotel Room Application</p>
+    </footer>
+</body>
+</html>
